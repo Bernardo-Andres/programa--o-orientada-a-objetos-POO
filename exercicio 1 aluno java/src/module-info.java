@@ -5,5 +5,5 @@
  * @author Bernardo
  *
  */
-module exercicioEmJava1 {
+module exercico1AlunoJava {
 }
