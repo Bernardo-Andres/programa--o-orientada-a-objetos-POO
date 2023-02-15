@@ -22,18 +22,18 @@ public class Principal {
 		
 		System.out.println("nome: "+ aluno1.getnome());
 		System.out.println("CPF: " + aluno1.getCPF());
-		System.out.println("Data de nascimento: "+ aluno1.getdataNasc());
+		System.out.println("Data de nascimento: "+ formato.format(dataAluno));
 		System.out.println("Email: "+ aluno1.getemail());
 		
 		
 		System.out.println("nome: "+ aluno2.getnome());
 		System.out.println("CPF: " + aluno2.getCPF());
-		System.out.println("Data de nascimento: "+ aluno2.getdataNasc());
+		System.out.println("Data de nascimento: "+ formato.format(dataAluno1));
 		System.out.println("Email: "+ aluno2.getemail());
 		
 		System.out.println("nome: "+ aluno3.getnome());
 		System.out.println("CPF: " + aluno3.getCPF());
-		System.out.println("Data de nascimento: "+ aluno3.getdataNasc());
+		System.out.println("Data de nascimento: "+ formato.format(dataAluno2));
 		System.out.println("Email: "+ aluno3.getemail());
 	}
 }
