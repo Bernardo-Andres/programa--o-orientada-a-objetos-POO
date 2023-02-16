@@ -50,6 +50,7 @@ public class Principal {
 				}
 			}
 			
+			System.out.println("------------------------------- ");
 			System.out.println("Aluno mais velho: ");
 			System.out.println("nome: "+ aluno1.getnome());
 			System.out.println("CPF: " + aluno1.getCPF());
