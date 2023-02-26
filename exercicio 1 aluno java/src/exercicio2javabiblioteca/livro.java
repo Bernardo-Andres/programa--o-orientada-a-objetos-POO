@@ -10,11 +10,11 @@ public class livro
 {
 	private String nome;
 	private String autor;
-	private Date ano_publicacao;
-	private Integer idLivro;
+	private String ano_publicacao;
+	private String idLivro;
 	
 	
-	public livro (String nome, String autor, Date ano_publicacao, Integer idLivro) throws Exception
+	public livro (String nome, String autor, String ano_publicacao, String idLivro) throws Exception
 	{		
 		super();
 		this.nome = nome;
@@ -39,19 +39,19 @@ public class livro
 		this.autor = autor;
 	}
 	
-	public Date getano_publicacao() {
+	public String getano_publicacao() {
 		return ano_publicacao;
 	}
 	
-	public void setano_publicacao(Date ano_publicacao) {
+	public void setano_publicacao(String ano_publicacao) {
 		this.ano_publicacao = ano_publicacao;
 	}
 	
-	public Integer getidLivro() {
+	public String getidLivro() {
 		return idLivro;
 	}
 	
-	public void setidLivro(Integer idLivro) {
+	public void setidLivro(String idLivro) {
 		this.idLivro = idLivro;
 	}
 
