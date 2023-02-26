@@ -63,8 +63,10 @@ public class principal {
 				System.out.println("Nome do Autor: " + listaDosLivros.get(i).getautor());
 				System.out.println("Ano publicação: "+ listaDosLivros.get(i).getano_publicacao());
 				System.out.println("Id: " + listaDosLivros.get(i).getidLivro());
+				System.out.println("Id Categoria:" + listaDosLivros.get(i).getnomeCategoria());
+				System.out.println("Id Categoria:" + listaDosLivros.get(i).getidCategoria());
 				System.out.println("------------------------------- ");
-				System.out.println("teste:" + listaDosLivros.get(i).getnomeCategoria());
+				
 			}		 
 	}
 	
