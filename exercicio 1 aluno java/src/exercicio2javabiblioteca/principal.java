@@ -8,8 +8,6 @@ public class principal {
 		
 			ArrayList<livro> listaDosLivros = new ArrayList<livro>();
 			
-			
-			
 			livro Livro = new livro("Java para leigos", "Barry A.","2011", "01");
 			Livro.setCategoriaLivro("Java", "01");
 			listaDosLivros.add(Livro);
