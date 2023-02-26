@@ -1,21 +1,15 @@
 package exercicio2javabiblioteca;
 
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-import java.util.Locale;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+
 
 public class categoria {
 
 	private String nome;
 	private String idCategoria;
 	
-	public categoria (String nome, String idCategoria) throws Exception 
+	public categoria () 
 	{
-		super();
-		this.nome = nome;
-		this.idCategoria = idCategoria;		
+		super();		
 	}
 	
 	public String getnome() {

@@ -1,10 +1,5 @@
 package exercicio2javabiblioteca;
 
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-import java.util.Locale;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 
 public class livro
 {
@@ -12,15 +7,17 @@ public class livro
 	private String autor;
 	private String ano_publicacao;
 	private String idLivro;
+	private categoria categoriaLivro;
 	
 	
-	public livro (String nome, String autor, String ano_publicacao, String idLivro) throws Exception
+	public livro (String nome, String autor, String ano_publicacao, String idLivro) 
 	{		
 		super();
 		this.nome = nome;
 		this.autor = autor;
 		this.ano_publicacao = ano_publicacao;
-		this.idLivro = idLivro;			
+		this.idLivro = idLivro;	
+		this.categoriaLivro = new categoria();
 	}
 
 	public String getnome() {
@@ -55,7 +52,21 @@ public class livro
 		this.idLivro = idLivro;
 	}
 
+	public String getnomeCategoria() {
+		return categoriaLivro.getnome();
+	}
 	
+	public String getidCategoria() {
+		return categoriaLivro.getidCategoria();
+	}
+
+	public void setCategoriaLivro(String idCategoria, String nome) {
+		
+		this.categoriaLivro.setidCategoria(idCategoria); 
+		
+		this.categoriaLivro.setnome(nome);
+		
+	}	
 	
 }
 
