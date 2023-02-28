@@ -1,6 +1,5 @@
 package Aula03HerançaBernardoAndrés;
 
-import java.util.Date;
 
 public class Professor extends Pessoa{
 	
