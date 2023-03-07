@@ -1,6 +1,6 @@
 package Exercicio4_BernardoAndrés;
 
-public class Animais {
+public class Animais implements Comparable<Animais> {
 	
 	private String nome;
 	private Integer idade;
@@ -57,5 +57,19 @@ public class Animais {
 	public void setIdA(Integer idA) {
 		this.idA = idA;
 	}
-
+	
+	public int compareTo(Animais outrosAnimais){
+		return Integer.compare(this.idade, outrosAnimais.idade);
+	}
+	
+	
+	
 }
+
+
+
+
+
+
+
+
