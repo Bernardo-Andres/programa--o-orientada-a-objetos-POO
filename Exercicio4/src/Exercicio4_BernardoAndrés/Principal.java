@@ -100,17 +100,67 @@ public class Principal {
 		
 		
 		for(Animais animaisFor : listaAnimais) {
-			System.out.println(animaisFor.getNome());
-			//System.out.println(animaisFor.getIdade());
+			//System.out.println("-------------------------------");
+			System.out.println("Nome Animal: " + animaisFor.getNome());			
 			
 			for (PertenceAoDono pertenceA: listaPertenceAoDono) {
 				if(pertenceA.getIdA() == animaisFor.getIdA()) {
-					System.out.println("Encontrou");
-					//System.out.println("O animal possui o id: " + animaisFor.getIdA() + " e o dono tem o id: " + pertenceA.getIdA() +"  "+ pertenceA.getId());
 					
-					for(Pessoa dono : listaPessoa) {
-						if(dono.getId() == pertence.getId() ) {
-							System.out.println("id pessoa: " + dono.getId() + " id pessoa: " + pertence.getId()+" id animal: " + pertence.getIdA());
+						for(Pessoa dono : listaPessoa) {
+						if(dono.getId() == pertenceA.getId() ) {
+							System.out.println("Dono: " + dono.getNome());
+							System.out.println("****************************");
+							break;
+						}
+					}
+				}
+				
+			}
+		}
+		
+		for( Pessoa dono : listaPessoa) {
+			System.out.println("-------------------------------");
+			System.out.println("Dono: " + dono.getNome());
+			
+			for (PertenceAoDono pertenceA: listaPertenceAoDono) {
+				if(dono.getId() == pertenceA.getId()) {
+					
+						for(Animais animaisFor : listaAnimais) {
+							if(animaisFor.getIdA() == pertenceA.getIdA() ) {
+							System.out.println("Animal: " + animaisFor.getNome());				
+							
+							break;
+						}
+					}
+				}
+				
+			}
+		}
+		
+		
+		for(Animais animaisFor : listaAnimais) {
+			//System.out.println("-------------------------------");
+			System.out.println("Informações do animal:");			
+			System.out.println("Nome Animal: " + animaisFor.getNome());
+			System.out.println("Cor: " + animaisFor.getCor());
+			System.out.println("Idade: " + animaisFor.getIdade());
+			System.out.println("Raça: " + animaisFor.getRaca());
+			System.out.println("Sexo: " + animaisFor.getSexo());
+			
+			
+			
+			
+			for (PertenceAoDono pertenceA: listaPertenceAoDono) {
+				if(pertenceA.getIdA() == animaisFor.getIdA()) {
+					
+						for(Pessoa dono : listaPessoa) {
+						if(dono.getId() == pertenceA.getId() ) {
+							System.out.println("Informações do dono: ");
+							System.out.println("Nome: " + dono.getNome());
+							System.out.println("Endereço: " + dono.getEndereco());
+							System.out.println("Id: " + dono.getId());
+							System.out.println("****************************");
+							break;
 						}
 					}
 				}
