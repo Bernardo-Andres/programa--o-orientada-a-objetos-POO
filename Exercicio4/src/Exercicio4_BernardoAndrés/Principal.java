@@ -127,8 +127,7 @@ public class Principal {
 					
 						for(Animais animaisFor : listaAnimais) {
 							if(animaisFor.getIdA() == pertenceA.getIdA() ) {
-							System.out.println("Animal: " + animaisFor.getNome());				
-							
+							System.out.println("Animal: " + animaisFor.getNome());							
 							break;
 						}
 					}
@@ -146,10 +145,8 @@ public class Principal {
 			System.out.println("Idade: " + animaisFor.getIdade());
 			System.out.println("Raça: " + animaisFor.getRaca());
 			System.out.println("Sexo: " + animaisFor.getSexo());
-			
-			
-			
-			
+			System.out.println("Id animal: " + animaisFor.getIdA());
+						
 			for (PertenceAoDono pertenceA: listaPertenceAoDono) {
 				if(pertenceA.getIdA() == animaisFor.getIdA()) {
 					
@@ -159,6 +156,8 @@ public class Principal {
 							System.out.println("Nome: " + dono.getNome());
 							System.out.println("Endereço: " + dono.getEndereco());
 							System.out.println("Id: " + dono.getId());
+							System.out.println("CPF: " + dono.getCpf());
+							
 							System.out.println("****************************");
 							break;
 						}
@@ -166,21 +165,10 @@ public class Principal {
 				}
 				
 			}
-		}
-		
-		
-		
-		
-		
-		
-		
-		
+		}		
 		//for(int i=0; i < listaPessoa.size(); i++) {
 			//System.out.println("nome:" + listaPessoa.get(i).getNome());
-		//}
-		
-		
-		
+		//}		
 	}
 
 }
