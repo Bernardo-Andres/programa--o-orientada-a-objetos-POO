@@ -3,22 +3,23 @@ package Exercicio5_BernardoAndrés;
 import java.util.Date;
 import java.util.List;
 
+//Utilizado Herança
 public class Cliente extends Pessoa {
 	
-	private Date datanasc;
+	private String datanasc;
 	private String cpf;
 
-	public Cliente(String nome, String email, List<String> telefone, String endereco, Date datanasc, String cpf) {
+	public Cliente(String nome, String email, List<String> telefone, String endereco, String datanasc, String cpf) {
 		super(nome, email, telefone, endereco);
 		this.datanasc = datanasc;
 		this.cpf = cpf;
 	}
 
-	public Date getDatanasc() {
+	public String getDatanasc() {
 		return datanasc;
 	}
 
-	public void setDatanasc(Date datanasc) {
+	public void setDatanasc(String datanasc) {
 		this.datanasc = datanasc;
 	}
 
