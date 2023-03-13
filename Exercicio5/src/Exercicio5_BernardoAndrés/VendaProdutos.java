@@ -23,6 +23,7 @@ public class VendaProdutos {
 		this.valorFinal = valorFinal;
 	}
 
+	//Encapsulamento
 
 	public ArrayList<Cliente> getCliente() {
 		return cliente;

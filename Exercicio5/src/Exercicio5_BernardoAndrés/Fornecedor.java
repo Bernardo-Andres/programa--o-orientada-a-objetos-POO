@@ -18,6 +18,8 @@ public class Fornecedor extends Pessoa {
 		this.cnpj = cnpj;
 	}
 	
+	//Encapsulamento
+	
 	public String getDataAbertura() {
 		return dataAbertura;
 	}

@@ -16,6 +16,9 @@ public class Pessoa {
 		this.telefone = telefone;
 		this.endereco = endereco;
 	}
+	
+	//Encapsulamento
+	
 	public String getNome() {
 		return nome;
 	}

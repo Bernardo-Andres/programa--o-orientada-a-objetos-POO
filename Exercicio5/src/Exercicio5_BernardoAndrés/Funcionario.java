@@ -18,6 +18,8 @@ public class Funcionario extends Pessoa {
 		this.dataNasc = dataNasc;
 	}
 	
+	//Encapsulamento
+	
 	public Date getDataadm() {
 		return dataadm;
 	}

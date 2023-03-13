@@ -14,6 +14,7 @@ public class Produtos {
 		this.forn = forn;
 	}
 	
+	//Encapsulamento
 	
 	public Integer getId() {
 		return id;

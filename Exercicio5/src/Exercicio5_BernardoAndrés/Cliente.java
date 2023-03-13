@@ -14,6 +14,8 @@ public class Cliente extends Pessoa {
 		this.datanasc = datanasc;
 		this.cpf = cpf;
 	}
+	
+	//Encapsulamento
 
 	public String getDatanasc() {
 		return datanasc;
