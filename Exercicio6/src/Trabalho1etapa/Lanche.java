@@ -1,18 +1,23 @@
 package Trabalho1etapa;
 
+
 public class Lanche extends Prato {
+	
 	private String tipoPao;
 	private String recheio;
 	private String molho;
 	
 	
-	public Lanche(String nomePrato, Double precoDeVenda, Double peso, String dataValidade, String tipoPao,
-			String recheio, String molho) {
-		super(nomePrato, precoDeVenda, peso, dataValidade);
+	public Lanche(String nomePrato, Double preco, String dataValidade, Double peso, String tipoPao, String recheio,
+			String molho) {
+		super(nomePrato, preco, dataValidade, peso);
 		this.tipoPao = tipoPao;
 		this.recheio = recheio;
 		this.molho = molho;
 	}
+	
+	
+	
 	public String getTipoPao() {
 		return tipoPao;
 	}
@@ -33,9 +38,9 @@ public class Lanche extends Prato {
 	}
 	
 	
+
 	
 	
 	
 
-	
 }

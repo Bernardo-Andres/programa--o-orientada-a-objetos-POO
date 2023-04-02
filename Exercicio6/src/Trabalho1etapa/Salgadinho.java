@@ -2,45 +2,53 @@ package Trabalho1etapa;
 
 public class Salgadinho extends Prato {
 	
-	
-	private String tipo;
-	private String massa;
+	private String tipoMassa;
 	private String recheio;
+	private String tipoFeito;
 	
-	public Salgadinho(String nomePrato, Double precoDeVenda, Double peso, String dataValidade, String tipo, String massa, String recheio) {
-		super(nomePrato, precoDeVenda, peso, dataValidade);
-		this.setMassa(massa);
-		this.setRecheio(recheio);
-		this.setTipo(tipo);
+	
+	
+	public Salgadinho(String nomePrato, Double preco, String dataValidade, Double peso, String tipoMassa,
+			String recheio, String tipoFeito) {
+		super(nomePrato, preco, dataValidade, peso);
+		this.tipoMassa = tipoMassa;
+		this.recheio = recheio;
+		this.tipoFeito = tipoFeito;
 	}
-
-	public String getTipo() {
-		return tipo;
+	
+	
+	
+	public String getTipoMassa() {
+		return tipoMassa;
 	}
-
-	public void setTipo(String tipo) {
-		this.tipo = tipo;
+	public void setTipoMassa(String tipoMassa) {
+		this.tipoMassa = tipoMassa;
 	}
-
-	public String getMassa() {
-		return massa;
-	}
-
-	public void setMassa(String massa) {
-		this.massa = massa;
-	}
-
 	public String getRecheio() {
 		return recheio;
 	}
-
 	public void setRecheio(String recheio) {
 		this.recheio = recheio;
 	}
+
+
+
+	public String getTipoFeito() {
+		return tipoFeito;
+	}
+
+
+
+	public void setTipoFeito(String tipoFeito) {
+		this.tipoFeito = tipoFeito;
+	}
+	
+	
+
 	
 	
 	
 	
+	
+
 }
-
-
