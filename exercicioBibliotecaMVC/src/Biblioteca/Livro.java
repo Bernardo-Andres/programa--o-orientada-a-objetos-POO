@@ -1,4 +1,4 @@
-package osvano;
+package bibliotecaMVC;
 
 public class Livro {
     private String nome;

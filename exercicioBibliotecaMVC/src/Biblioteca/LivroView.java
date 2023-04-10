@@ -1,4 +1,4 @@
-package osvano;
+package bibliotecaMVC;
 
 import javax.swing.*;
 import java.awt.*;

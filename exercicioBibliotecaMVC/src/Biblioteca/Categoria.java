@@ -1,4 +1,4 @@
-package osvano;
+package bibliotecaMVC;
 
 public class Categoria {
     private String nome;
