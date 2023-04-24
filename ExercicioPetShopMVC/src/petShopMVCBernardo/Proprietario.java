@@ -83,7 +83,15 @@ public class Proprietario {
         return proprietarios;
     }
 
+   
 
+
+    public int acharProprietario() {
+    	System.out.println("teste entrou na func");
+    	return 1;
+    	
+    	
+    }
 
 	
 }
