@@ -11,8 +11,13 @@ public class Proprietario {
 	private String cpf;
 	private String endereco;
 	
-	private ArrayList<Proprietario> proprietarios = new ArrayList<>();
+	//private ArrayList<Proprietario> proprietarios = new ArrayList<>();
+	private ArrayList<Animal> animais;
 	
+	public Proprietario() {
+		super();
+		this.animais = new ArrayList<>();
+	}
 	
 	@Override
 	public String toString() {
@@ -27,6 +32,7 @@ public class Proprietario {
 		this.setId(id);
 		this.setCpf(cpf);
 		this.setEndereco(endereco);
+		this.animais = new ArrayList<>();
 	}
 
 	
@@ -70,10 +76,25 @@ public class Proprietario {
 		this.endereco = endereco;
 	}
 
+	public ArrayList<Animal> getAnimais() {
+		return animais;
+	}
+
+
+
+
+
+	public void setAnimais(ArrayList<Animal> animais) {
+		this.animais = animais;
+	}
+	
+	public void adicionarAnimal(Animal animal) {
+		this.animais.add(animal);
+	}
 
 	
 
-    
+    /*
     public void cadastrarProprietario(String nome, int id, String cpf, String endereco) {
         Proprietario proprietario = new Proprietario(nome, id, cpf, endereco);
         proprietarios.add(proprietario);
@@ -82,16 +103,16 @@ public class Proprietario {
     public ArrayList<Proprietario> getProprietarios() {
         return proprietarios;
     }
-
+*/
    
 
-
+/*
     public int acharProprietario() {
     	System.out.println("teste entrou na func");
     	return 1;
     	
     	
     }
-
+*/
 	
 }

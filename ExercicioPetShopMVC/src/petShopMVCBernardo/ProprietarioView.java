@@ -5,10 +5,19 @@ package petShopMVCBernardo;
 
 
 
-import javax.swing.*;
-import java.awt.*;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextField;
 
 public class ProprietarioView extends JFrame {
     private JList<Proprietario> listaProprietarios = new JList<>();
@@ -52,7 +61,9 @@ public class ProprietarioView extends JFrame {
         setLocationRelativeTo(null);
         setVisible(true);
     }
-
+    
+    
+    /*
     public Proprietario cadastrarProprietario() {
         String nome = campoNome.getText();
         int id = Integer.parseInt(campoId.getText());
@@ -60,6 +71,8 @@ public class ProprietarioView extends JFrame {
         String endereco = campoEndereco.getText();
         return new Proprietario(nome, id, cpf, endereco);
     }
+    
+    */
     public void mostrarProprietarios(ArrayList<Proprietario> proprietarios) {
         listaProprietarios.setListData(proprietarios.toArray(new Proprietario[0]));
     }
@@ -71,10 +84,23 @@ public class ProprietarioView extends JFrame {
     public void mostrarMensagem(String mensagem) {
         JOptionPane.showMessageDialog(this, mensagem);
     }
+    
+    
+	public String getCampoNome() {
+		return campoNome.getText();
+	}
+	
+	
+	public String getCampoId() {
+		return campoId.getText();
+	}
+	
+	public String getCampoCpf() {
+		return campoCpf.getText();
+	}
+	
+	public String getCampoEndereco() {
+		return campoEndereco.getText();
+	}
+	
 }
-
-
-
-
-
-

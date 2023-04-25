@@ -18,7 +18,8 @@ import javax.swing.JTextField;
 
 public class CaoView extends JFrame {
     private JList<Cao> listaCao = new JList<>();
-    private JTextField campoNome = new JTextField();
+    JTextField campoNome = new JTextField();
+    //private JTextField campoNome = new JTextField();
     private JTextField campoId = new JTextField();
     private JTextField campoCor = new JTextField();
     private JTextField campoSexo = new JTextField();
@@ -26,6 +27,7 @@ public class CaoView extends JFrame {
     private JTextField campoRaca = new JTextField();
     private JTextField campoPeso = new JTextField();
     private JTextField campoPorte = new JTextField();
+    private JTextField campoProprietario = new JTextField();
     private JButton botaoCadastrar = new JButton("Cadastrar");
     
     
@@ -52,9 +54,12 @@ public class CaoView extends JFrame {
         painelCadastro.add(campoPeso);
         painelCadastro.add(new JLabel("Porte:"));
         painelCadastro.add(campoPorte);
-        painelCadastro.add(new JLabel("Raca:"));
+        painelCadastro.add(new JLabel("Raça:"));
         painelCadastro.add(campoRaca);
         painelCadastro.add(new JLabel());
+        painelCadastro.add(new JLabel("ID Dono:"));
+        painelCadastro.add(campoProprietario);
+        
         painelCadastro.add(botaoCadastrar);
 
         // Cria o painel de listagem
@@ -74,7 +79,7 @@ public class CaoView extends JFrame {
     }
     
     
-    
+    /*
     public Cao cadastrarCachorro() {
         String nome = campoNome.getText();
         int id = Integer.parseInt(campoId.getText());
@@ -87,6 +92,7 @@ public class CaoView extends JFrame {
         return new Cao(id, nome, cor, idade, sexo, raca, porte, peso);
         //int id, String nome, String cor, int idade, String sexo, String raca, String porte, String peso
     }
+    */
     public void mostrarCao(ArrayList<Cao> caes) {
         listaCao.setListData(caes.toArray(new Cao[0]));
     }
@@ -99,10 +105,62 @@ public class CaoView extends JFrame {
         JOptionPane.showMessageDialog(this, mensagem);
     }
 	
+
+
+public String getCampoNome() {
+	return campoNome.getText();
 }
 
 
 
+public String getCampoId() {
+	return campoId.getText();
+}
+
+
+
+public String getCampoCor() {
+	return campoCor.getText();
+}
+
+
+
+public String getCampoSexo() {
+	return campoNome.getText();
+}
+
+
+
+
+public String getCampoIdade() {
+	return campoIdade.getText();
+}
+
+
+
+public String getCampoRaca() {
+	return campoRaca.getText();
+}
+
+
+
+public String getCampoPeso() {
+	return campoPeso.getText();
+}
+
+
+
+public String getCampoPorte() {
+	return campoPorte.getText();
+}
+
+
+
+public String getCampoProprietario() {
+	return campoProprietario.getText();
+}
+
+}
 
 
 

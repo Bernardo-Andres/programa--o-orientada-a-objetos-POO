@@ -32,9 +32,8 @@ public class Passaro extends Animal {
 
 	@Override
 	public String toString() {
-		return "Passaro [nAnilha=" + nAnilha + ", getId()=" + getId() + ", getNome()=" + getNome() + ", getCor()="
-				+ getCor() + ", getIdade()=" + getIdade() + ", getSexo()=" + getSexo() + ", getRaca()=" + getRaca()
-				+ "]";
+		return "Passaro Número Anilha = " + nAnilha + ", Id = " + getId() + ", getNome = " + getNome() + ", Cor = "
+				+ getCor() + ", Idade = " + getIdade() + ", Sexo = " + getSexo() + ", Raça = " + getRaca();
 	}
 
 

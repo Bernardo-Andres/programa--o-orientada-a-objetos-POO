@@ -10,14 +10,14 @@ public class Principal {
         
         
         
-        Cao model2 = new Cao(0, null, null, 0, null, null, null, null);
+        Cao model2 = new Cao(0, null, null, 0, null, null, null, null, null);
         CaoView view2 = new CaoView();
         CaoController controller2 = new CaoController(model2, view2);
         
         
         
         
-        Gato model1 = new Gato(0, null, null, 0, null, null, null, null);
+        Gato model1 = new Gato(0, null, null, 0, null, null, null, null, null);
         GatoView view1 = new GatoView();
         GatoController controller1 = new GatoController(model1, view1);
         
