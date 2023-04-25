@@ -25,6 +25,7 @@ public class PassaroView extends JFrame {
     private JTextField campoIdade = new JTextField();
     private JTextField campoRaca = new JTextField();
     private JTextField campoAnilha = new JTextField();
+    private JTextField campoProprietario = new JTextField();
     private JButton botaoCadastrar = new JButton("Cadastrar");
     //int id, String nome, String cor, int idade, String sexo, String raca, String numeroAnilha
     
@@ -51,12 +52,14 @@ public class PassaroView extends JFrame {
         painelCadastro.add(campoAnilha);
         painelCadastro.add(new JLabel("Raca:"));
         painelCadastro.add(campoRaca);
+        painelCadastro.add(new JLabel("id proprietario:"));
+        painelCadastro.add(campoProprietario);
         painelCadastro.add(new JLabel());
         painelCadastro.add(botaoCadastrar);
 
         // Cria o painel de listagem
         JPanel painelListagem = new JPanel(new BorderLayout());
-        painelListagem.add(new JLabel("Gatos Cadastrados"), BorderLayout.NORTH);
+        painelListagem.add(new JLabel("Passaros Cadastrados"), BorderLayout.NORTH);
         painelListagem.add(new JScrollPane(listaPassaros), BorderLayout.CENTER);
 
         // Adiciona os painéis à janela principal
@@ -72,6 +75,11 @@ public class PassaroView extends JFrame {
     
     
     
+    
+    
+    
+    /*
+    
     public Passaro cadastrarPassaro() {
         String nome = campoNome.getText();
         int id = Integer.parseInt(campoId.getText());
@@ -81,8 +89,9 @@ public class PassaroView extends JFrame {
         String raca = campoRaca.getText();
         int idade = Integer.parseInt(campoIdade.getText());
         return new Passaro(id, nome, cor, idade, sexo, raca, anilha);
-
     }
+    
+    */
     public void mostrarGatos(ArrayList<Passaro> passaros) {
         listaPassaros.setListData(passaros.toArray(new Passaro[0]));
     }
@@ -94,6 +103,60 @@ public class PassaroView extends JFrame {
     public void mostrarMensagem(String mensagem) {
         JOptionPane.showMessageDialog(this, mensagem);
     }
+    
+    
+    
+    
+	public String getCampoNome() {
+		return campoNome.getText();
+	}
+	
+	
+    
+	public String getCampoId() {
+		return campoId.getText();
+	}
+	
+	
+    
+	public String getCampoCor() {
+		return campoCor.getText();
+	}
+	
+	
+    
+	public String getCampoSexo() {
+		return campoNome.getText();
+	}
+	
+	
+	
+    
+	public String getCampoIdade() {
+		return campoIdade.getText();
+	}
+	
+	
+    
+	public String getCampoRaca() {
+		return campoRaca.getText();
+	}
+	
+	
+    
+	public String getCampoAilha() {
+		return campoAnilha.getText();
+	}
+	
+	
+
+	
+	
+    
+	public String getCampoProprietario() {
+		return campoProprietario.getText();
+	}
+	
 	
 }
 

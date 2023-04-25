@@ -24,7 +24,7 @@ public class Principal {
         
         
         
-        Passaro model3 = new Passaro(0, null, null, 0, null, null, null);
+        Passaro model3 = new Passaro(0, null, null, 0, null, null, null, null);
         PassaroView view3 = new PassaroView();
         PassaroController controller3 = new PassaroController(model3, view3);
     }
