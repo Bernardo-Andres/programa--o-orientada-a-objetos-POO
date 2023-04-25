@@ -55,7 +55,7 @@ public class GatoView extends JFrame {
         painelCadastro.add(new JLabel("Raca:"));
         painelCadastro.add(campoRaca);
         painelCadastro.add(new JLabel());
-        painelCadastro.add(new JLabel("ID funcionario:"));
+        painelCadastro.add(new JLabel("ID Dono:"));
         painelCadastro.add(campoProprietario);
         
         painelCadastro.add(botaoCadastrar);

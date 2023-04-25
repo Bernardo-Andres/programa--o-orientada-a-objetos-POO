@@ -53,7 +53,7 @@ public class PassaroController {
         		proprietario.adicionarAnimal(passaro);
         		ProprietarioController.proprietarios.remove(proprietario);
         		ProprietarioController.proprietarios.add(proprietario);
-                view.mostrarMensagem("Gato cadastrado com sucesso!");
+                view.mostrarMensagem("Pássaro cadastrado com sucesso!");
                 
                 view.mostrarGatos(passaros);;
             	
