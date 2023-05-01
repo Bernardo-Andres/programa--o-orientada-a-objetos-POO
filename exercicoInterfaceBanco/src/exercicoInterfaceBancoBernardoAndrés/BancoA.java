@@ -42,10 +42,19 @@ public class BancoA implements Banco {
 	}
 	
 	
+	
 	@Override
 	public Double getSaldo() {
 		
 		return conta.getSaldo();
+	}
+	
+	public void transferencia(Conta contaT, Double transferencia) {
+		Double transferir = transferencia + contaT.getSaldo();
+		Double retirar = conta.getSaldo() - transferencia;
+		transferencia = transferencia + contaT.getSaldo();
+		conta.setSaldo(retirar);
+		contaT.setSaldo(transferir);
 	}
 	
 
